@@ -137,7 +137,7 @@ def prossec(call):
         
         try:
             headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.0; WOW64; rv:24.0) Gecko/20100101 Firefox/24.0'}
-            resp = requests.get('',headers=headers).text
+            resp = requests.get('https://bitcoin.com',headers=headers).text
             soup = BeautifulSoup(resp, "html.parser")
             
             bit = soup.find_all("span", class_="pclqee")
