@@ -1,11 +1,10 @@
 import requests
 import telebot
-from bs4 import BeautifulSoup
-from telebot import types
-
 from var_main import *
+from telebot import types
+from bs4 import BeautifulSoup
 
-bot = telebot.TeleBot(token)
+bot = telebot.TeleBot("<< You token >>")
 
 @bot.message_handler(commands=["start"])
 def start(message):
